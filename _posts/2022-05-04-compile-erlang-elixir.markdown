@@ -47,7 +47,7 @@ Now, let's clone Erlang/OTP repository and setup some environment variables:
 ~/src/otp $ export MAKEFLAGS=-j8
 ```
 
-`ERL_TOP` is used in compilation time, and in our case should beet to current working directory,
+`ERL_TOP` is used in compilation time, and in our case should be set to current working directory,
 which is repo's root. Passing `--prefix` option to the `./configure` script, we tell compiler,
 where do we want to install Erlang/OTP, once it compiled. In my case, the path is set to
 `$HOME/.local/share/erlang`. _**I suggest**_ you to do the same, to ease the way you can
