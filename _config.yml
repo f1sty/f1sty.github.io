@@ -18,18 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: f1sty blog
+title: f1sty's blog
 email: truef1s7@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Blog mainly about tech and coding on elixir but also about cats cooking baking and art
 twitter_username: f1sty
 github_username: f1sty
 
 # Build settings
+# remote_theme: pages-themes/hacker@v0.2.0
 theme: minima
 plugins:
   - jekyll-feed
@@ -45,9 +42,10 @@ kramdown:
   yntax_highlighter: rouge
 
 domain: f1sty.github.io       # if you want to force HTTPS,pecify the domain without the http at thetart, e.g. example.com
-url: https://f1sty.github.io  # the base hostname and protocol for yourite, e.g. http://example.com
-baseurl: /      # place folder name if theite iserved in aubfolder
-
+url: "https://f1sty.github.io"  # the base hostname and protocol for yourite, e.g. http://example.com
+baseurl: "/"      # place folder name if theite iserved in aubfolder
+minima:
+  skin: dark
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

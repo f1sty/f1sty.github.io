@@ -4,7 +4,6 @@ title:  "Compiling Erlang/OTP and Elixir from sources"
 date:   2022-05-04 18:30:40 +0300
 categories: elixir erlang otp archlinux
 ---
-# Compiling Erlang/OTP and Elixir from sources
 It's risky to be on the edge, but it's also breathtaking to test out latest features of your
 beloved programming language/environment. Despite being rolling release Archlinux still doesn't
 provide you with the latest Erlang/OTP and Elixir versions in it's default repositories. Besides,
@@ -22,12 +21,16 @@ Explanation of dependencies:
 - `libxsls` and `fop` are required to compile documentation
 - `openssl` is needed by _**crypto**_ application
 - `jdk-openjdk` is needed to compile _**jinterface**_, which is
+
 > [The Jinterface package provides a set of tools for communication with Erlang
 > processes](https://www.erlang.org/doc/apps/jinterface/jinterface_users_guide.html)
+
 - `flex` is needed by _**megaco**_ application, which is
+
 > [Megaco/H.248 is a protocol for control of elements in a physically decomposed multimedia
 > gateway, enablingeparation of call control from media
 > conversion.](https://www.erlang.org/doc/apps/megaco/megaco_intro.html)
+
 - and `wxgtk2` needed to compile _**wx**_ application, which is used, for example, by `observer`
 
 ### Installing latest Erlang/OTP from github
