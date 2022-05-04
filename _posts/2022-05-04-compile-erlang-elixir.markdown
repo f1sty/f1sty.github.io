@@ -67,7 +67,13 @@ Next, we are compiling and installing Erlang/OTP and documentation:
 ~/src/otp $ make DOC_TARGETS=chunks install-docs
 ```
 
-`DOC_TARGETS` is needed, so won't compile docs in all available formats, to save time and space.
+`DOC_TARGETS` is need to be set to one of the following type:
+- pdf
+- chunks
+- man
+- html
+
+I've set it to `chunks`, so it won't compile docs in all available formats, to save time and space.
 
 And finally, update your `PATH` environment variable, so we would use newly installed Erlang while
 building Elixir from sources:
