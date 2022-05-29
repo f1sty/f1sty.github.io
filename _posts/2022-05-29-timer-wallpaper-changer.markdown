@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Changing wallpaper in dwm periodically using systemd.timer"
-date:   2022-05-04 18:30:40 +0300
+date:   2022-05-29 11:24:40 +0300
 categories: archlinux linux systemd dwm wallpaper rice feh
 ---
 I've heard about this fancy wallpaper changers, that sits in backgound and set a random wallpaper
