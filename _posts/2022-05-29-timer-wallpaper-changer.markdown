@@ -8,18 +8,14 @@ I've heard about this fancy wallpaper changers, that sits in backgound and set a
 periodically, so I've decided to get myself one.
 
 ### Installing needed programs
-First of all, lets install something, that could be used to setup fallpaper, I'm using `feh`, it's
+First of all, lets install something, that could be used to setup wallpaper. I'm using `feh`, it's
 small and fast image viewer and it can set backgroud also:
-
-First of all, we need to install some dependencies:
 ```bash
 $ pacman -S feh
 ```
 
-NOTE: I assume, that you are using `systemd` init system.
-
 ### Setting up programs
-Once you've installed `feh`, you should run it once like this:
+Once you've installed `feh`, you should run it like this:
 ```bash
 $ feh --bg-scale --randomize /path/to/wallpapers/*
 ```
@@ -42,7 +38,7 @@ your shell:
 $ systemctl edit --user --full --force wallpaper.service
 ```
 
-It will open you default editor with an empty service unit file.
+It will open your default editor with an empty service unit file.
 
 Options explanation:
 - `--user` means we creating user-level systemd service, that will be run only for this user on
@@ -75,7 +71,7 @@ name it same name, as a service name, beacuse by default, a service by the same 
 $ systemctl edit --user --full --force wallpaper.timer
 ```
 
-We've already familiar with this options, so pu this into new timer unit file:
+We've already familiar with this options, so put this into new timer unit file:
 ```
 [Unit]
 Description=Update wallpaper periodically
@@ -88,10 +84,10 @@ WantedBy=timers.target
 ```
 
 Option `OnUnitActiveSec=` defines a timer relative to when the unit the timer unit is activating
-was last activated. In our case, relative to the last time `wallpaper.service` was activated. The
-time format in this option is quite flexible, you can read more about it in `man systemd.timer`,
-but ib our case we just set it to `10m`, which make timer run our service unit file every 10
-minutes.
+was last activated. In our case, this means relative to the last time `wallpaper.service` was
+activated. The time format in this option is quite flexible, you can read more about it in
+`man systemd.timer`, but in our case we just set it to `10m`, which makes timer run our service
+unit file every 10 minutes.
 
 ### Wrap up
 Well, that's it. Now your background will always be fresh. I encourage you to read man pages on
