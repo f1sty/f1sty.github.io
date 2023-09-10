@@ -7,6 +7,10 @@ categories: archlinux linux systemd dwm wallpaper rice feh
 I've heard about this fancy wallpaper changers, that sits in backgound and set a random wallpaper
 periodically, so I've decided to get myself one.
 
+### UPDATE:
+Since the timer won't start automatically if you not using GUI-login, you can put `systemctl
+start --user wallpaper.timer` into your `.xinitrc`.
+
 ### Installing needed programs
 First of all, lets install something, that could be used to setup wallpaper. I'm using `feh`, it's
 small and fast image viewer and it can set backgroud also:
