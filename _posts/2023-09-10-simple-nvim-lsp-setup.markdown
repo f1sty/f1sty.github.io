@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fast and simple neovim lsp setup"
-date:   2022-05-29 11:24:40 +0300
+date:   2023-09-10 11:20:00 +0300
 categories: neovim nvim lsp language-server config dotfiles completion
 ---
 Most new `nvim` users are usually buffled with LSP-setup, ending up installing a bunch of
